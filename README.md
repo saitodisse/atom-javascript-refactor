@@ -12,6 +12,7 @@ cd atom-wordCount-tutorial
 apm link
 ```
 
-now just press: ctrl + F12
+- on atom just press: ctrl + F12
+- shows words from selected text only if there is a selection
 
 ![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
