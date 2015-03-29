@@ -1,12 +1,12 @@
 {
   "name": "word-count",
     "main": "./lib/word-count",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "version": "0.2.0",
+  "description": "A simple word count from atom examples",
   "activationCommands": {
     "atom-workspace": "word-count:toggle"
   },
-  "repository": "https://github.com/atom/word-count",
+  "repository": "https://github.com/saitodisse/atom-wordCount-tutorial",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"

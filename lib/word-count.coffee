@@ -25,13 +25,11 @@ module.exports = WordCount =
     wordCountViewState: @wordCountView.serialize()
 
   toggle: ->
-    console.log 'WordCount was toggled!'
-
+    console.log 'toggle'
     if @modalPanel.isVisible()
       @modalPanel.hide()
     else
       editor = atom.workspace.getActiveTextEditor()
       words = editor.getText().split(/\s+/).length
-      console.log this
       @wordCountView.setCount(words)
       @modalPanel.show()
