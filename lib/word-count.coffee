@@ -29,7 +29,12 @@ module.exports = WordCount =
     if @modalPanel.isVisible()
       @modalPanel.hide()
     else
-      editor = atom.workspace.getActiveTextEditor()
-      words = editor.getText().split(/\s+/).length
+      words = @getCurrentText().split(/\s+/).length
       @wordCountView.setCount(words)
       @modalPanel.show()
+
+  getCurrentText: ->
+    editor = atom.workspace.getActiveTextEditor()
+    selection = editor.getSelectedText()
+    text = editor.getText()
+    selection || text
