@@ -25,13 +25,29 @@ module.exports = WordCount =
     wordCountViewState: @wordCountView.serialize()
 
   toggle: ->
-    console.log 'toggle'
     if @modalPanel.isVisible()
-      @modalPanel.hide()
+      @hide()
     else
-      words = @getCurrentText().split(/\s+/).length
-      @wordCountView.setCount(words)
-      @modalPanel.show()
+      @show()
+
+  hide: ->
+    @dispose_onDidChangeSelectionRange.dispose()
+    @modalPanel.hide()
+
+  calculate: ->
+    words = @getCurrentText().split(/\s+/).length
+    @wordCountView.setCount(words)
+
+  show: ->
+    @calculate()
+    @modalPanel.show()
+
+    # attach onDidChangeSelectionRange
+    if (@dispose_onDidChangeSelectionRange == undefined ||
+        @dispose_onDidChangeSelectionRange.disposed)
+      editor = atom.workspace.getActiveTextEditor()
+      @dispose_onDidChangeSelectionRange = editor.onDidChangeSelectionRange =>
+        @calculate()
 
   getCurrentText: ->
     editor = atom.workspace.getActiveTextEditor()

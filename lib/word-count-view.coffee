@@ -7,7 +7,6 @@ class WordCountView
 
     # Create message element
     message = document.createElement('div')
-    message.textContent = "The WordCount package is Alive! It's ALIVE!"
     message.classList.add('message')
     @element.appendChild(message)
 
@@ -22,5 +21,5 @@ class WordCountView
     @element
 
   setCount: (count) ->
-    displayText = "There are #{count} words."
+    displayText = "#{count} words."
     @element.children[0].textContent = displayText
