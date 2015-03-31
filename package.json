@@ -1,16 +1,17 @@
 {
-  "name": "word-count",
-    "main": "./lib/word-count",
+  "name": "javascript-refactoring",
+  "main": "./lib/javascript-refactoring",
   "version": "0.2.0",
   "description": "A simple word count from atom examples",
   "activationCommands": {
-    "atom-workspace": "word-count:toggle"
+    "atom-workspace": "javascript-refactoring:insertConsoleArguments"
   },
-  "repository": "https://github.com/saitodisse/atom-wordCount-tutorial",
+  "repository": "https://github.com/saitodisse/atom-jsRefactoring-tutorial",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   },
   "dependencies": {
+    "ast-logger": "^1.0.5"
   }
 }

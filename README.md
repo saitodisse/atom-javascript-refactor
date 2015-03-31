@@ -1,14 +1,14 @@
-# word-count package
+# javascript-refactoring package
 
 Word count atom package example.
 
-Based on https://atom.io/docs/v0.188.0/hacking-atom-package-word-count
+Based on https://atom.io/docs/v0.188.0/hacking-atom-package-javascript-refactoring
 
 ## how to install from code
 
 ```sh
-git clone git@github.com:saitodisse/atom-wordCount-tutorial.git
-cd atom-wordCount-tutorial
+git clone git@github.com:saitodisse/atom-jsRefactoring-tutorial.git
+cd atom-jsRefactoring-tutorial
 apm link
 ```
 
