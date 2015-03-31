@@ -6,7 +6,7 @@
   "activationCommands": {
     "atom-workspace": "javascript-refactoring:insertConsoleArguments"
   },
-  "repository": "https://github.com/saitodisse/atom-jsRefactoring-tutorial",
+  "repository": "https://github.com/saitodisse/atom-javascript-refactor",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
