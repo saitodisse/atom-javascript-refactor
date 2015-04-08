@@ -12,6 +12,7 @@
     "atom": ">=0.174.0 <2.0.0"
   },
   "dependencies": {
-    "ast-logger": "^1.0.9"
+    "ast-logger": "^1.0.12",
+    "source-map-support": "^0.2.10"
   }
 }
