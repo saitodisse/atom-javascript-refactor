@@ -2,6 +2,83 @@
 
 Javascript refactoring AST tools - BETA
 
+## clone all
+
+```sh
+
+echo '-----------------------------------------------------'
+echo 'creating ast folder...'
+
+mkdir ast
+cd ast
+
+echo '-----------------------------------------------------'
+echo 'Cloning all repos...'
+
+git clone git@github.com:saitodisse/atom-javascript-refactor.git
+git clone git@github.com:saitodisse/debug-print.git
+git clone git@github.com:saitodisse/log-my-code.git
+git clone git@github.com:azukiapp/castborg.git
+```
+
+## prepare all your dev environment
+
+```sh
+echo '-----------------------------------------------------'
+echo 'debug-print compiling...'
+
+cd debug-print
+npm i && gulp babel
+cd ..
+
+echo '-----------------------------------------------------'
+echo 'castborg compiling...'
+
+cd castborg
+npm i && gulp babel
+cd ..
+
+echo '-----------------------------------------------------'
+echo 'log-my-code compiling...'
+
+cd log-my-code
+npm i && gulp babel
+
+echo 'linking debug-print...'
+rm -rf node_modules/debug-print
+ln -sf `pwd`/../debug-print node_modules
+
+echo 'linking castborg...'
+rm -rf node_modules/castborg
+ln -sf `pwd`/../castborg node_modules
+
+cd ..
+
+echo '-----------------------------------------------------'
+echo 'atom-javascript-refactor compiling...'
+
+cd atom-javascript-refactor
+npm i
+echo 'activating plugin (apm link)...'
+apm link
+
+echo 'linking castborg...'
+rm -rf node_modules/castborg
+ln -sf `pwd`/../castborg node_modules
+
+echo 'linking log-my-code...'
+rm -rf node_modules/log-my-code
+ln -sf `pwd`/../log-my-code node_modules
+
+```
+
+## uses
+
+- https://github.com/saitodisse/debug-print
+- https://github.com/saitodisse/log-my-code
+- https://github.com/azukiapp/castborg
+
+
 ## how to install from code
 
 ```sh

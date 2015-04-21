@@ -1,0 +1,12 @@
+{
+  "name": "_sandbox",
+  "version": "0.0.1",
+  "description": "",
+  "private": "true",
+  "main": "instrumented_goal.js",
+  "author": "Julio Makdisse Saito",
+  "license": "ISC",
+  "dependencies": {
+    "debug-print": "*"
+  }
+}

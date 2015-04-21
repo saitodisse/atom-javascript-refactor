@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "castborg": "^0.0.9",
-    "ast-logger": "0.0.16",
+    "log-my-code": "*",
     "source-map-support": "^0.2.10"
   }
 }
