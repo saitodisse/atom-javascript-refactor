@@ -1,6 +1,51 @@
-# javascript-refactoring package
+# javascript-refactoring BETA
 
-Javascript refactoring AST tools - BETA
+## What does javascript-refactoring does?
+
+For now, only instrument functions, changing your original code. Then after see the result you can get your original code back with git ou UNDO.
+
+-----------------
+
+## Features
+
+- replaces "return statements" of functions for tracing purposes
+
+-----------------
+
+## Usage
+
+#### 0. Install this package
+
+```sh
+$ apm install javascript-refactoring
+```
+
+#### 1. Install debug-print in your project
+
+```sh
+$ npm i debug-print
+```
+
+#### 2. Activate plugin
+
+Press: `Ctrl + F11`
+
+#### 3. run your app with DEBUG=*
+
+```sh
+# inline ENV
+$ DEBUG=* node your_app_name.js
+
+# or call gulp/grunt/...
+$ DEBUG=* (gulp| grunt| anything)
+
+# or export ENV
+$ export DEBUG=*
+$ node your_app_name.js
+```
+
+for developers
+------------------------
 
 ## clone all
 
