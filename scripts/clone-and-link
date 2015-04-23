@@ -1,0 +1,52 @@
+#!/bin/bash
+
+cd ..
+git clone git@github.com:saitodisse/debug-print.git
+git clone git@github.com:saitodisse/log-my-code.git
+git clone git@github.com:azukiapp/castborg.git
+
+echo '-----------------------------------------------------'
+echo 'debug-print compiling...'
+
+cd debug-print
+git pull && npm i && gulp babel
+cd ..
+
+echo '-----------------------------------------------------'
+echo 'castborg compiling...'
+
+cd castborg
+git pull && npm i && gulp babel
+cd ..
+
+echo '-----------------------------------------------------'
+echo 'log-my-code compiling...'
+
+cd log-my-code
+git pull && npm i && gulp babel
+
+echo 'linking debug-print...'
+rm -rf node_modules/debug-print
+ln -sf `pwd`/../debug-print node_modules
+
+echo 'linking castborg...'
+rm -rf node_modules/castborg
+ln -sf `pwd`/../castborg node_modules
+
+cd ..
+
+echo '-----------------------------------------------------'
+echo 'atom-javascript-refactor compiling...'
+
+cd atom-javascript-refactor
+npm i
+echo 'activating plugin (apm link)...'
+apm link
+
+echo 'linking castborg...'
+rm -rf node_modules/castborg
+ln -sf `pwd`/../castborg node_modules
+
+echo 'linking log-my-code...'
+rm -rf node_modules/log-my-code
+ln -sf `pwd`/../log-my-code node_modules
