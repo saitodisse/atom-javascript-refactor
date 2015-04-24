@@ -28,7 +28,7 @@ $ npm i debug-print
 
 #### 2. Activate plugin
 
-Press: `Ctrl + F11`
+Press: `ctrl + l`, `ctrl + r`
 
 #### 3. run your app with DEBUG=*
 
