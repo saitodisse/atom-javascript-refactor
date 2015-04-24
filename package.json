@@ -1,7 +1,7 @@
 {
   "name": "javascript-refactoring",
   "main": "./lib/javascript-refactoring",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A simple word count from atom examples",
   "activationCommands": {
     "atom-workspace": "javascript-refactoring:instrumentAllFunctions"
