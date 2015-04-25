@@ -13,6 +13,10 @@
           'label': 'Insert console.log with selected text'
           'command': 'javascript-refactoring:addConsoleLogNextLine'
         }
+        {
+          'label': 'Remove all console.logs'
+          'command': 'javascript-refactoring:removeAllInsertedDebugs'
+        }
       ]
     ]
   }
