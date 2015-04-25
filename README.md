@@ -1,8 +1,17 @@
-Javascript-Refactoring Tools
+Javascript-Refactoring Tools (pré early alpha version)
 ------------
 
+# very ALPHA version
+
+This is a very early version to something that would become very usefull. The main functionality, the "Instrument all function" is not working well with ES6. I didn't have time to make this more stable. If you are using ES5 this command may work well.
+
+All help is appreciated.
 
 ### Commands
+
+### `ctrl + l, r` Instrument all function (requires debug-print)
+
+Very useful to trace what functions are called in a node.js app. For now, only instrument functions, changing your original code. Then after see the result you can get your original code back with git or UNDO.
 
 ------------
 
@@ -16,11 +25,6 @@ Insert console.log that was inserted with the last command
 
 Removes all console.log that was inserted with the last command
 
-------------
-
-### `ctrl + l, r` Instrument all function (requires debug-print)
-
-Very useful to trace what functions are called in a node.js app. For now, only instrument functions, changing your original code. Then after see the result you can get your original code back with git or UNDO.
 
 ** 1. Install debug-print to your node project **
 

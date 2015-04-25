@@ -10,4 +10,5 @@
 'atom-workspace':
   'ctrl-l ctrl-r': 'javascript-refactoring:instrumentAllFunctions'
   'ctrl-l ctrl-l': 'javascript-refactoring:addConsoleLogNextLine'
+  'ctrl-l ctrl-n': 'javascript-refactoring:addConsoleLogLineNumberOnSelection'
   'ctrl-l ctrl-c': 'javascript-refactoring:removeAllInsertedDebugs'

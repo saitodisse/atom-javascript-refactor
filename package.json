@@ -1,12 +1,15 @@
 {
   "name": "javascript-refactoring",
   "main": "./lib/javascript-refactoring",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Javascript-Refactoring Tools (atom plugin)",
   "activationCommands": {
-    "atom-workspace": ["javascript-refactoring:instrumentAllFunctions",
-                       "javascript-refactoring:addConsoleLogNextLine",
-                       "javascript-refactoring:removeAllInsertedDebugs"]
+    "atom-workspace": [
+      "javascript-refactoring:instrumentAllFunctions",
+      "javascript-refactoring:addConsoleLogNextLine",
+      "javascript-refactoring:addConsoleLogLineNumberOnSelection",
+      "javascript-refactoring:removeAllInsertedDebugs"
+    ]
   },
   "repository": "https://github.com/saitodisse/atom-javascript-refactor",
   "license": "MIT",

@@ -14,6 +14,10 @@
           'command': 'javascript-refactoring:addConsoleLogNextLine'
         }
         {
+          'label': 'Insert a number for each line'
+          'command': 'javascript-refactoring:addConsoleLogLineNumberOnSelection'
+        }
+        {
           'label': 'Remove all console.logs'
           'command': 'javascript-refactoring:removeAllInsertedDebugs'
         }
