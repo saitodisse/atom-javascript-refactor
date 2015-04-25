@@ -1,36 +1,34 @@
-# javascript-refactoring BETA
+Javascript-Refactoring Tools
+------------
 
-## What does javascript-refactoring does?
 
-For now, only instrument functions, changing your original code. Then after see the result you can get your original code back with git ou UNDO.
+### Commands
 
------------------
+------------
 
-## Features
+### `ctrl + l, l` Insert console.log with selected text
 
-- replaces "return statements" of functions for tracing purposes
+Insert console.log that was inserted with the last command
 
------------------
+------------
 
-## Usage
+### `ctrl + l, c` Removes all console.log
 
-#### 0. Install this package
+Removes all console.log that was inserted with the last command
 
-```sh
-$ apm install javascript-refactoring
-```
+------------
 
-#### 1. Install debug-print in your project
+### `ctrl + l, r` Instrument all function (requires debug-print)
+
+Very useful to trace what functions are called in a node.js app. For now, only instrument functions, changing your original code. Then after see the result you can get your original code back with git or UNDO.
+
+** 1. Install debug-print to your node project **
 
 ```sh
 $ npm i debug-print
 ```
 
-#### 2. Activate plugin
-
-Press: `ctrl + l`, `ctrl + r`
-
-#### 3. run your app with DEBUG=*
+** 2. run your app with DEBUG=* env **
 
 ```sh
 # inline ENV
@@ -44,7 +42,11 @@ $ export DEBUG=*
 $ node your_app_name.js
 ```
 
-for developers
+
+------------------------
+
+
+# developers
 ------------------------
 
 ## clone all
@@ -66,12 +68,6 @@ git clone git@github.com:saitodisse/atom-javascript-refactor.git
 ./scripts/clone-and-link
 ```
 
-## uses
-
-- https://github.com/saitodisse/debug-print
-- https://github.com/saitodisse/log-my-code
-- https://github.com/azukiapp/castborg
-
 ## how to install from code
 
 ```sh
@@ -80,9 +76,8 @@ cd atom-jsRefactoring-tutorial
 apm link
 ```
 
-- insert a `console.log(arguments)` on top pf current function
+## dependencies
 
-  - on atom just press: ctrl + F11
-
-
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+- https://github.com/saitodisse/debug-print
+- https://github.com/saitodisse/log-my-code
+- https://github.com/azukiapp/castborg

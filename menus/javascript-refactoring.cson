@@ -1,20 +1,17 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
-'context-menu':
-  'atom-text-editor': [
-    {
-      'label': 'Insert Console Arguments javascript-refactoring'
-      'command': 'javascript-refactoring:instrumentAllFunctions'
-    }
-  ]
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'javascript-refactoring'
+      'label': 'JS-refactoring'
       'submenu': [
         {
-          'label': 'Insert Console Arguments'
+          'label': 'Instrument all function with debug-print'
           'command': 'javascript-refactoring:instrumentAllFunctions'
+        }
+        {
+          'label': 'Insert console.log with selected text'
+          'command': 'javascript-refactoring:addConsoleLogNextLine'
         }
       ]
     ]

@@ -9,3 +9,5 @@
 # https://atom.io/docs/latest/advanced/keymaps
 'atom-workspace':
   'ctrl-l ctrl-r': 'javascript-refactoring:instrumentAllFunctions'
+  'ctrl-l ctrl-l': 'javascript-refactoring:addConsoleLogNextLine'
+  'ctrl-l ctrl-c': 'javascript-refactoring:removeAllInsertedDebugs'
