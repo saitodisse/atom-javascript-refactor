@@ -1,5 +1,5 @@
 {
-  "name": "javascript-refactoring",
+  "name": "javascript-refactoring-tools",
   "main": "./lib/javascript-refactoring",
   "version": "0.2.17",
   "description": "Javascript-Refactoring Tools (atom plugin)",
