@@ -1,7 +1,7 @@
 {
   "name": "javascript-refactoring-tools",
   "main": "./lib/javascript-refactoring",
-  "version": "0.2.18",
+  "version": "0.2.19",
   "description": "Javascript-Refactoring Tools",
   "activationCommands": {
     "atom-workspace": [
